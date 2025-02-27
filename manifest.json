@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Jarvis Trigger Extension",
+    "version": "1.0",
+    "description": "This extension triggers Jarvis to start processing when the button is clicked.",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
